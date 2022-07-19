@@ -86,6 +86,13 @@ class Bevrage
     {
         return "This bevrage is $this->temperature and $this->color";
     }
+
+    //________________________
+
+    function showConst()
+    {
+        echo  self::barman;
+    }
 }
 
 class Beer extends Bevrage
@@ -125,6 +132,11 @@ class Beer extends Bevrage
     {
         return $this->alcoholPercentage;
     }
+
+    function showConst()
+    {
+        echo  self::barman;
+    }
 }
 
 $cola = new Bevrage("black", 2.0, "");
@@ -145,10 +157,16 @@ echo "<br>" . $Duvel->getName();
 
 echo "<br>" . $Duvel->getAlcoholPercentage();
 
-$myclass = "Bevrage";
-
 echo "<br>";
 
 echo "<br>";
 
-echo $myclass::barman;
+echo Bevrage::barman;
+
+echo "<br>";
+
+$cola->showConst();
+
+echo "<br>";
+
+$Duvel->showConst();
