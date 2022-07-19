@@ -163,4 +163,10 @@ $Duvel->showConst();
 
 echo "<br>";
 
+echo "<br>";
+
+echo Bevrage::$adress;
+
+echo "<br>";
+
 echo $Duvel::$adress;
