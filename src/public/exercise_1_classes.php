@@ -33,7 +33,7 @@ class Bevrage
         if (!is_float($price)) {
             exit;
         } else {
-            $this->price = $price;
+            $this->price = $price . " €";
         }
 
 
@@ -47,13 +47,13 @@ class Bevrage
 
     public function getinfo()
     {
-        echo "This bevrage is $this->temperature and $this->color";
+        return "This bevrage is $this->temperature and $this->color";
     }
 }
 
 $cola = new Bevrage("black", 2.0, "");
 
-$cola->getinfo();
+echo $cola->getinfo();
 
 echo "<br>" . $cola->temperature;
 
