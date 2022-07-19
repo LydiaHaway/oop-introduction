@@ -160,3 +160,7 @@ $cola->showConst();
 echo "<br>";
 
 $Duvel->showConst();
+
+echo "<br>";
+
+echo $Duvel::$adress;
