@@ -5,17 +5,14 @@ declare(strict_types=1);
 use Bevrage as GlobalBevrage;
 
 /* EXERCISE 6
-
 Copy the classes of exercise 2.
-
 TODO: Change the properties to private.
-TODO: Make a const barname with the value 'Het Vervolg'.
+TODO: Make a const BARNAME with the value 'The Trooper'.
 TODO: Print the constant on the screen.
-TODO: Create a function in beverage and use the constant.
+TODO: Create a function in Beverage and use the constant.
 TODO: Do the same in the beer class.
 TODO: Print the output of these functions on the screen.
 TODO: Make sure that every print is on a new line.
-
 Use typehinting everywhere!
 */
 
@@ -25,7 +22,7 @@ class Bevrage
     private $color;
     private $price;
     private $temperature;
-    const barman = "Het Vervolg";
+    const barman = "The Trooper";
 
 
     public function __construct($color, $price, $temperature)
